@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #11111b;
+}
+
+.card {
+    background-color: #1e1e2e;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    width: 100%;
+    text-align: center;
+}
+
+.card-header {
+    background-color: #313244;
+    padding: 20px;
+}
+
+.card-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ffffff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-name {
+    font-size: 22px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.card-title {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+
+.card-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s, color 0.3s;
+    opacity: 0.5;
+}
+
+.card-link:hover {
+    transform: scale(1.1); 
+    background-color: #303040;
+    color: #ffffff;
+}
+
+.card-link:hover {
+    background-color: #303040;
+    color: #ffffff;
+}
+
+.easter-egg {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    background-color: #313244;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s forwards;
+    color: #1e1e2e;
+    align-content: center;
+    align-self: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
